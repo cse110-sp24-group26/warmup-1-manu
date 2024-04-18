@@ -1,0 +1,57 @@
+body {
+	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+	padding: 10px 30px;
+	margin: 0px;
+	height: 100vh;
+	box-sizing: border-box;
+}
+
+/* calendar */
+my-calendar {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	margin: 0px;
+}
+
+.my-calendar-days {
+	display: flex;
+	align-items: stretch;
+	overflow-x: scroll;
+	flex-grow: 1;
+}
+
+
+/* day */
+my-day {
+	min-width: 200px;
+	padding: 10px;
+	margin-right: 10px;
+	overflow-y: scroll;
+}
+
+my-day h2 {
+	font-weight: 500;
+	top: 0px;
+	position: sticky;
+	background-color: rgba(255, 255, 255, 0.6);
+	backdrop-filter: blur(40px);
+	padding: 4px;
+}
+
+my-day ul {
+	padding-left: 20px;
+}
+
+my-day a {
+	display: block;
+	text-decoration: none;
+}
+
+my-day a:hover {
+	text-decoration: underline;
+}
+
+my-day:not(:last-child) {
+	border-right: solid #ccc 0.5px;
+}
